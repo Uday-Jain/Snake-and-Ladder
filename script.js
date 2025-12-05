@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const [player, position] of Object.entries(playerPositions)) {
             const pos = getPosition(position);
             const img = new Image();
-            img.src = `assets/player${player}.png`;
+            img.src = `Assets/player${player}.png`;
             img.onload = () => {
                 ctx.drawImage(img, pos.x + cellSize / 4, pos.y + cellSize / 4, cellSize / 2, cellSize / 2);
             };
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Roll the dice
     function rollDice() {
         const diceRoll = Math.floor(Math.random() * 6) + 1;
-        dice.src = `assets/dice/dice${diceRoll}.png`;
+        dice.src = `Assets/dice/dice${diceRoll}.png`;
         return diceRoll;
     }
 
